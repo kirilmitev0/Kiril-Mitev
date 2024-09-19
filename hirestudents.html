@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <script src="https://kit.fontawesome.com/6b5392a44c.js" crossorigin="anonymous"></script>  </head>
+  <body>
+    <nav
+      class="navbar"
+      id="navBar"
+    >
+    <div class="logo">
+      <a class="flex" href="index.html">
+      <div class="flex-item logo-image"></div>
+      <div><span class="flex-item logoText">BRAINSTER</span></div>
+      </a>
+    </div>
+      <div
+        class="burger-menu"
+        id="burgerMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="navbar-links">
+        <div class="nav-link"><a href="comingSoon.html">Marketing Academy</a></div>
+        <div class="nav-link"><a href="comingSoon.html">Programming Academy</a></div>
+        <div class="nav-link"><a href="comingSoon.html">Data Science Academy</a></div>
+        <div class="nav-link"><a href="comingSoon.html">Design Academy</a></div>
+        <div class="nav-link">
+          <a
+            href="hireStudents.html"
+            class="red-button"
+            >Hire Our Student</a
+          >
+        </div>
+      </div>
+      <div class="nav-items">
+        <div class="nav-item"><a href="comingSoon.html">Marketing Academy</a></div>
+        <div class="nav-item"><a href="comingSoon.html">Programming Academy</a></div>
+        <div class="nav-item"><a href="comingSoon.html">Data Science Academy</a></div>
+        <div class="nav-item"><a href="comingSoon.html">Design Academy</a></div>
+        <div class="nav-item">
+          <a
+            href="hireStudents.html"
+            class="red-button"
+            >Hire Our Student</a>
+        </div>
+      </div>
+    </nav>
+    <div class="hiredStudents">
+          <h1>Hire students</h1>
+    </div>
+    <form  class="form" method="post" action="submit" id="myForm">
+           <div class="formDuo"> 
+                <label class="label" for="name">Name and surname</label>
+                <input class="input" type="text" id = "name" placeholder="Your name and surname" required>
+           </div>
+            <div class="formDuo">
+                <label class="label" for="companyName">Company name</label>
+                <input class="input" type="text" id = "companyName" placeholder="Your company's name" required>
+            </div>
+            <div class="formDuo">
+                <label class="label" for="email">Email</label>
+                <input class="input" type="email" id = "email" placeholder="Your company's e-mail" required>
+            </div class="formDuo">
+            <div class="formDuo">
+                <label class="label" for="number">Phone Number</label>
+                <input class="input" type="number" id = "number" placeholder="Your company's phone number" required>
+            </div>
+            <div class="formDuo">
+                <label class="label" for="">Type of students</label>
+                <div class="custom-select">
+                    <select id="studentType" required>
+                      <option value="0">Select type of student:</option>
+                      <option value="1">Marketing students</option>
+                      <option value="2">Programming students</option>
+                      <option value="3">Data science students</option>
+                      <option value="4">Desing students</option>
+                    </select>
+                </div>
+                <div class="invalid" id="invalid">
+                    <p><span class="yellow"><i class="fa-sharp fa-solid fa-circle-exclamation"></i></span>
+                    Choose a type of student!</p></div>
+            </div>
+              
+            <div class="formDuo">
+                <label class="label invisible">Bla  bla</label>
+                <input class="input send" type="submit" value="SEND"  form="myForm">
+            </div>
+    </form>
+    <footer class="footer form-footer">
+      <p> Made by <span>❤</span> the students of Brainster</p>
+    </footer>
+    <script src="customSelect.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
